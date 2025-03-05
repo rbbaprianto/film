@@ -3,7 +3,7 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-primary_region = 'lhr'
+primary_region = 'sin'
 
 [build]
 
@@ -23,9 +23,9 @@ primary_region = 'lhr'
   strategy = 'immediate'
 
 [[vm]]
-  memory = '1gb'
+  memory = '2gb'
   cpu_kind = 'shared'
-  cpus = 1
+  cpus = 2
 
 [[http_service.checks]]
   path = "/health"
